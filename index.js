@@ -1,7 +1,7 @@
 
 import { Platform, NativeModules } from 'react-native';
 
-const { RNTaptic } = NativeModules;
+let { RNTaptic } = NativeModules;
 
 if (!RNTaptic && Platform.OS === 'web') {
   RNTaptic = require('./web');
